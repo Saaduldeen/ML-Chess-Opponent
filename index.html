@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>The learning Chessboard</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="implimentation.js" defer></script>
+</head>
+
+<body>
+  <main class="game">
+    <p class="eyebrow">LEARN THROUGH PLAY</p>
+    <h1>The Learning Chessboard</h1>
+
+    <p id="status">
+      Select a piece, then choose its destination.
+    </p>
+
+    <div class="game-layout">
+      <aside class="panel captured-panel" aria-labelledby="captured-title">
+        <h2 id="captured-title">Captured pieces</h2>
+        <p class="panel-description">Pieces taken during this game.</p>
+        <h3>Captured by White</h3>
+        <div id="captured-by-white" class="captured-list" aria-live="polite">None yet</div>
+        <h3>Captured by Black</h3>
+        <div id="captured-by-black" class="captured-list" aria-live="polite">None yet</div>
+      </aside>
+
+      <section class="board-area" aria-label="Chess game">
+        <div id="chessboard"></div>
+        <button id="reset-button" type="button">Restart game</button>
+        <p class="board-note">Practice board · Chess rules coming next</p>
+      </section>
+
+      <aside class="panel score-panel" aria-labelledby="score-title">
+        <h2 id="score-title">Score</h2>
+        <p class="panel-description">Scoring will be added later.</p>
+        <div class="score-row"><span>White</span><span class="score-value" aria-label="Not calculated">—</span></div>
+        <div class="score-row"><span>Black</span><span class="score-value" aria-label="Not calculated">—</span></div>
+        <span class="coming-soon">Coming soon</span>
+      </aside>
+    </div>
+
+  </main>
+</body>
+</html>
